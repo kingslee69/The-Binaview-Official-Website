@@ -336,7 +336,7 @@ body {
 }
 
 .project-tile:hover img {
-  opacity: 0.5;
+  opacity: 0.6;
   transition: 0.5s ease-out 0.1s;
 }
 
@@ -359,14 +359,75 @@ body {
       The CTA styling starts Here
   */
 .CTA {
+  position: relative;
+  top: -1px;
   text-align: center;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 
   background-color: var(--light);
 }
 /*  
       The CTA styling ends Here
+  */
+/*  
+      The Team styling starts Here
+  */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.team-header {
+  max-width: 10rem;
+}
+
+.team-body {
+  max-width: 45rem;
+}
+
+.header3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 170%;
+  /* or 27px */
+
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--dark-secondary);
+}
+
+.members {
+  padding: 2rem auto;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 2rem 1rem;
+  grid-template-columns: repeat(3, 2fr);
+}
+
+.cell p {
+  margin: 0;
+}
+
+.cell > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cell {
+  background-color: var(--light);
+}
+
+.cell:nth-child(3n) {
+}
+/*  
+      The Team styling ends Here
   */
 /*  
       The Carousel styling ends Here
@@ -432,6 +493,16 @@ body {
   /*  
       The About-section styling ends Here
   */
+  /*  
+      The Team-section styling starts Here
+  */
+
+  .team-container {
+    justify-content: space-between;
+  }
+  /*  
+      The Team-section styling ends Here
+  */
 }
 
 /****
@@ -481,6 +552,16 @@ body {
     font-weight: normal;
     font-size: 45px;
   }
+  /*  
+      The Team styling starts Here
+  */
+
+  .cell .header2 {
+    font-size: 23px;
+  }
+  /*  
+      The Team styling ends Here
+  */
 }
 
 /****
@@ -544,5 +625,21 @@ body {
 
   /*  
       The Project-section styling ends Here
+  */
+  /*  
+      The Team-section styling starts Here
+  */
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cell {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*  
+      The Team-section styling ends Here
   */
 }
