@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Binaview</title>
+  </head>
+  <body>
+    <!-- 
+      The NavBar Starts Here
+    -->
+    <nav class="container-fluid nav-bar sticky">
+      <div class="container flex-me">
+        <img
+          src="./images/binaview logo.svg"
+          class="brand"
+          alt="Binaview Logo"
+        />
+
+        <div class="mid-nav desktop-only">
+          <a href="#projects">Projects</a>
+          <a href="#team">Team</a>
+          <a href="#client">Clients</a>
+        </div>
+
+        <a href="#contact" class="btn btn-md btn-cta nav-cta desktop-only"
+          >Contact</a
+        >
+
+        <button onclick="openMobileNav()" class="btn btn-menu mobile-only">
+          <img src="./images/menu.svg" alt="nav menu" />
+        </button>
+      </div>
+    </nav>
+    <!-- 
+         Mobile NavBar Starts Here
+    -->
+
+    <div id="mobileNav" class="all-screen">
+      <div class="container" style="position: relative">
+        <button
+          onclick="closeMobileNav()"
+          class="btn btn-menu close-btn"
+          styles="margin-left: auto"
+          style="position: absolute; top: 0.8rem; right: 0"
+        >
+          <img src="./images/close.svg" alt="nav menu" />
+        </button>
+      </div>
+      <div class="container mobile-nav">
+        <a href="#projects">Projects</a>
+        <a href="#team">Team</a>
+        <a href="#client">Clients</a>
+        <a href="#contact" class="btn btn-sm btn-cta desktop-only"
+          >Start a Project</a
+        >
+      </div>
+    </div>
+    <!-- 
+       Mobile NavBar ends Here
+    -->
+
+    <!-- 
+      The NavBar ends Here
+    -->
+
+    <!-- 
+      The Carousel Starts Here
+    -->
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img
+              src="./images/brandingImg.png"
+              class="first-image"
+              alt="Image of a branded mockup"
+            />
+
+            <img
+              src="./images//branding.svg"
+              class="second-image"
+              alt="branding."
+            />
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div id="illustration" class="container">
+            <img
+              src="./images/Beauty Illustration.svg"
+              class="first-image"
+              alt="an illustration"
+            />
+
+            <img
+              src="./images//illustration.svg"
+              class="second-image"
+              alt="illustration."
+            />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img
+              src="./images/webImg.png"
+              class="first-image"
+              alt="Image of a web-design mockup"
+            />
+
+            <img
+              src="./images//web.svg"
+              class="second-image"
+              alt="web design."
+            />
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- 
+      The Carousel ends Here
+    -->
+    <!-- 
+      The About Section starts Here
+    -->
+    <div class="container about-section">
+      <img class="about-img" src="./images/aboutImg.svg" alt="" />
+      <div class="about">
+        <h1 class="header1">We Don’t Just Design, We Create Solutions.</h1>
+        <p class="body-text">
+          We provide strategy led design to bridge the gap between your business
+          and its audience and promote sales. We achieve this by understanding
+          what makes a business unique and working from there to make the
+          business stand out from the cluttered market.
+        </p>
+
+        <a href="#contact" class="btn btn-lg btn-brand">Start a Project</a>
+      </div>
+    </div>
+    <!-- 
+      The About Section ends Here
+    -->
+    <!-- 
+      The Projects Section starts Here
+    -->
+    <p class="container header2">Our Projects</p>
+    <div class="container bg-secondary project-grid" style="padding: 0">
+      <div class="container project-tile">
+        <img
+          class="project-img"
+          src="./images/UTC Project.jpg"
+          alt="Unizik Tech Community Project"
+        />
+        <p class="project-text">Unizik Tech Community Project</p>
+      </div>
+      <div class="containe project-tile">
+        <img
+          class="project-img"
+          src="./images/Binaview Project.jpg"
+          alt="Binaview Website Project"
+        />
+        <p class="project-text">Binaview Website Project</p>
+      </div>
+      <div class="container project-tile">
+        <img
+          class="project-img"
+          src="./images/Shirp Project.png"
+          alt="Shirp! Branding Project"
+        />
+        <p class="project-text">Shirp! Branding Project</p>
+      </div>
+      <div class="container project-tile">
+        <img
+          class="project-img"
+          src="./images/Zerotohero Project.jpg"
+          alt="Zerotohero Webinar Project"
+        />
+        <p class="project-text">Zerotohero Webinar Project</p>
+      </div>
+    </div>
+    <!-- 
+      The Projects Section ends Here
+    -->
+    <!-- 
+      The CTA Section starts Here
+    -->
+    <div class="container-fluid CTA">
+      <p class="header2">Ready to talk?</p>
+      <!-- <a href="#contact" class="btn btn-sm btn-cta desktop-only"
+        >Start a Project</a
+      > -->
+      <a href="#contact" class="btn btn-lg btn-dark">Start a Project</a>
+    </div>
+    <!-- 
+      The CTA Section ends Here
+    -->
+
+    <!--Popper and Bootstrap JS -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
