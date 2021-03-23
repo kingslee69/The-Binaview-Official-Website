@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   color: var(--dark);
@@ -381,7 +385,7 @@ body {
 }
 
 .team-header {
-  max-width: 10rem;
+  max-width: 12rem;
 }
 
 .team-body {
@@ -429,8 +433,38 @@ body {
 /*  
       The Team styling ends Here
   */
+
 /*  
-      The Carousel styling ends Here
+      The Clients styling starts Here
+  */
+
+.logos {
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-gap: 5rem 1rem;
+  grid-template-columns: repeat(4, 2fr);
+
+  justify-items: center;
+  align-items: center;
+}
+
+.logos img {
+  height: 30px;
+  width: auto;
+  /* opacity: 0.8; */
+}
+
+.logos img:nth-child(3) {
+  height: 17px;
+}
+
+.logos img:nth-child(7) {
+  height: 23px;
+}
+/*  
+      The Clients styling ends Here
   */
 
 /********************************************************************************************************
@@ -557,7 +591,7 @@ body {
   */
 
   .cell .header2 {
-    font-size: 23px;
+    font-size: 24px;
   }
   /*  
       The Team styling ends Here
