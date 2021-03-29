@@ -12,6 +12,11 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://emailoctopus.com/bundles/emailoctopuslist/css/1.6/form.css"
+    />
     <link rel="stylesheet" href="main.css" />
 
     <title>Binaview</title>
@@ -22,9 +27,8 @@
     -->
     <nav class="container-fluid nav-bar sticky">
       <div class="container flex-me">
-        <a href="/"
+        <a href="#carouselExampleIndicators"
           ><img
-            href="#projects"
             src="./images/binaview logo.svg"
             class="brand"
             alt="Binaview Logo"
@@ -328,14 +332,14 @@
 
       <div class="logos">
         <img src="./images/clients/Vibe Big logo 1.svg" alt="VibeBig.com" />
+        <img src="./images/clients/Tutor.svg" alt="Tutor" />
+        <img src="./images/clients/Shirp 1.svg" alt="Shirp, a fashion brand" />
+        <img src="./images/clients/Frame 20.svg" alt="Unizik Tech Society" />
+        <img src="./images/clients/The Miniport logo 2.svg" alt="Miniport" />
         <img
           src="./images/clients/WOL logo 1.svg"
           alt="World of Love Initiative"
         />
-        <img src="./images/clients/Shirp 1.svg" alt="Shirp, a fashion brand" />
-        <img src="./images/clients/The Miniport logo 2.svg" alt="Miniport" />
-        <img src="./images/clients/Frame 20.svg" alt="Unizik Tech Society" />
-        <img src="./images/clients/Tutor.svg" alt="Tutor" />
         <img
           src="./images/clients/ZerotoHero Logo brand icon 1.svg"
           alt="Zerotohero"
@@ -361,6 +365,102 @@
     <!-- 
       The CTA Section ends Here
     -->
+    <!-- 
+      The Footer Section starts Here
+    -->
+    <div class="container-fluid footer">
+      <div class="container footer-container">
+        <img
+          class="desktop-only"
+          src="./images/Binaview white.svg"
+          alt="The Binaview Logo"
+        />
+
+        <div
+          class="emailoctopus-form-wrapper emailoctopus-form-centered null"
+          style="color: rgb(26, 26, 26)"
+        >
+          <p class="emailoctopus-success-message"></p>
+          <p class="emailoctopus-error-message"></p>
+          <form
+            action="https://emailoctopus.com/lists/44eee8cb-529a-11eb-a3d0-06b4694bee2a/members/embedded/1.3s/add"
+            method="post"
+            data-message-success="Thanks for subscribing!"
+            data-message-missing-email-address="Your email address is required."
+            data-message-invalid-email-address="Your email address looks incorrect, please try again."
+            data-message-bot-submission-error="This doesn't look like a human submission."
+            data-message-consent-required="Please check the checkbox to indicate your consent."
+            data-message-invalid-parameters-error="This form has missing or invalid fields."
+            data-message-unknown-error="Sorry, an unknown error has occurred. Please try again later."
+            class="emailoctopus-form"
+            data-sitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6"
+          >
+            <div class="emailoctopus-form-row" style="margin: 0; padding: 0">
+              <input
+                id="field_0"
+                name="field_0"
+                type="email"
+                placeholder="Sign up for our newsletter"
+                required="required"
+                style="border-radius: 0"
+                class="email-input"
+              />
+            </div>
+            <div
+              class="emailoctopus-form-row-subscribe"
+              style="margin: 0; padding: 0"
+            >
+              <input type="hidden" name="successRedirectUrl" />
+              <button
+                type="submit"
+                class="btn-light submit"
+                style="font-family: inherit; border: none; margin: 0"
+              >
+                Sign me up
+              </button>
+            </div>
+          </form>
+          <div class="footer-nav mid-nav">
+            <a href="#projects">Projects</a>
+            <a href="#team">Team</a>
+            <a href="#client">Clients</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="socials">
+        <a target="_blank" href="https://www.instagram.com/binaviewcreative/"
+          ><img
+            src="./images/socials/instagram.svg"
+            alt="Link to our instagram touchpoint"
+        /></a>
+
+        <a target="_blank" href="https://web.facebook.com/binaview/"
+          ><img
+            src="./images/socials/facebook.svg"
+            alt="Link to our facebook touchpoint"
+        /></a>
+
+        <a
+          target="_blank"
+          href="https://www.youtube.com/channel/UCkBqvA5Lzg30mVIcJ8p8t6g/videos"
+          ><img
+            src="./images/socials/youtube.svg"
+            alt="Link to our youtube touchpoint"
+        /></a>
+
+        <a target="_blank" href="https://twitter.com/nworiekingslee"
+          ><img
+            src="./images/socials/twitter.svg"
+            alt="Link to our twitter touchpoint"
+        /></a>
+      </div>
+    </div>
+    <!-- 
+      The Footer Section ends Here
+    -->
 
     <!--Popper and Bootstrap JS -->
 
@@ -374,6 +474,10 @@
       integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Newsletter Javascript -->
+    <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-recaptcha.js"></script>
+    <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-embed.js"></script>
 
     <script src="index.js"></script>
   </body>
