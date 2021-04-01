@@ -5,10 +5,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- newsletter CSS -->
     <link
       rel="stylesheet"
       href="https://emailoctopus.com/bundles/emailoctopuslist/css/1.6/form.css"
     />
+
+    <!-- wowjs CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
@@ -40,9 +48,7 @@
           <a href="#client">Clients</a>
         </div>
 
-        <a href="#contact" class="btn btn-md btn-cta nav-cta desktop-only"
-          >Contact</a
-        >
+        <a href="#contact" class="btn btn-md btn-cta desktop-only">Contact</a>
 
         <button onclick="openMobileNav()" class="btn btn-menu mobile-only">
           <img src="./images/menu.svg" alt="nav menu" />
@@ -190,7 +196,7 @@
     <!-- 
       The About Section starts Here
     -->
-    <div class="container about-section">
+    <div class="container about-section wow bounceInUp">
       <img class="about-img" src="./images/aboutImg.svg" alt="" />
       <div class="about">
         <h1 class="header1">We Don’t Just Design, We Create Solutions.</h1>
@@ -214,14 +220,16 @@
     <div class="container bg-secondary project-grid" style="padding: 0">
       <a href="./UTC project.html" class="container project-tile">
         <img
+          loading="lazy"
           class="project-img"
           src="./images/UTC Project.jpg"
           alt="Unizik Tech Community Project"
         />
         <p class="project-text">Unizik Tech Community Project</p>
       </a>
-      <a class="containe project-tile">
+      <a class="container project-tile">
         <img
+          loading="lazy"
           class="project-img"
           src="./images/Binaview Project.jpg"
           alt="Binaview Website Project"
@@ -230,6 +238,7 @@
       </a>
       <a class="container project-tile">
         <img
+          loading="lazy"
           class="project-img"
           src="./images/Shirp Project.png"
           alt="Shirp! Branding Project"
@@ -238,6 +247,7 @@
       </a>
       <a class="container project-tile">
         <img
+          loading="lazy"
           class="project-img"
           src="./images/Zerotohero Project.jpg"
           alt="Zerotohero Webinar Project"
@@ -285,27 +295,47 @@
     >
       <div class="container-sm grid">
         <div class="cell">
-          <img src="./images/Kingsley.jpg" alt="A Picture of Kingsley" />
+          <img
+            loading="lazy"
+            src="./images/Kingsley.jpg"
+            alt="A Picture of Kingsley"
+          />
           <p class="header2">Nworie Kingsley</p>
           <p class="header3">Creative director</p>
         </div>
         <div class="cell">
-          <img src="./images/Promise.jpg" alt="A Picture of Kingsley" />
+          <img
+            loading="lazy"
+            src="./images/Promise.jpg"
+            alt="A Picture of Kingsley"
+          />
           <p class="header2">Promise</p>
           <p class="header3">developer</p>
         </div>
         <div class="cell">
-          <img src="./images/Paulo.jpg" alt="A Picture of Kingsley" />
+          <img
+            loading="lazy"
+            src="./images/Paulo.jpg"
+            alt="A Picture of Kingsley"
+          />
           <p class="header2">Akujor Paul</p>
           <p class="header3">The Illustrator</p>
         </div>
         <div class="cell">
-          <img src="./images/Justus.jpg" alt="A Picture of Kingsley" />
+          <img
+            loading="lazy"
+            src="./images/Justus.jpg"
+            alt="A Picture of Kingsley"
+          />
           <p class="header2">Igwe Justus</p>
           <p class="header3">UI/UX Designer</p>
         </div>
         <div class="cell">
-          <img src="./images/Danny.jpg" alt="A Picture of Kingsley" />
+          <img
+            loading="lazy"
+            src="./images/Danny.jpg"
+            alt="A Picture of Kingsley"
+          />
           <p class="header2">Daniel Udechukwu</p>
           <p class="header3">Frontend Developer</p>
         </div>
@@ -331,20 +361,39 @@
       </p>
 
       <div class="logos">
-        <img src="./images/clients/Vibe Big logo 1.svg" alt="VibeBig.com" />
-        <img src="./images/clients/Tutor.svg" alt="Tutor" />
-        <img src="./images/clients/Shirp 1.svg" alt="Shirp, a fashion brand" />
-        <img src="./images/clients/Frame 20.svg" alt="Unizik Tech Society" />
-        <img src="./images/clients/The Miniport logo 2.svg" alt="Miniport" />
         <img
+          loading="lazy"
+          src="./images/clients/Vibe Big logo 1.svg"
+          alt="VibeBig.com"
+        />
+        <img loading="lazy" src="./images/clients/Tutor.svg" alt="Tutor" />
+        <img
+          loading="lazy"
+          src="./images/clients/Shirp 1.svg"
+          alt="Shirp, a fashion brand"
+        />
+        <img
+          loading="lazy"
+          src="./images/clients/Frame 20.svg"
+          alt="Unizik Tech Society"
+        />
+        <img
+          loading="lazy"
+          src="./images/clients/The Miniport logo 2.svg"
+          alt="Miniport"
+        />
+        <img
+          loading="lazy"
           src="./images/clients/WOL logo 1.svg"
           alt="World of Love Initiative"
         />
         <img
+          loading="lazy"
           src="./images/clients/ZerotoHero Logo brand icon 1.svg"
           alt="Zerotohero"
         />
         <img
+          loading="lazy"
           src="./images/clients/The Venice Store logo 1.svg"
           alt="Venice Store"
         />
@@ -472,8 +521,8 @@
     <!-- Newsletter Javascript -->
     <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-recaptcha.js"></script>
     <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-embed.js"></script>
-    <!--Popper and Bootstrap JS -->
 
+    <!--Popper and Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
       integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
@@ -484,6 +533,12 @@
       integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
       crossorigin="anonymous"
     ></script>
+
+    <!-- wowjs script -->
+    <!-- <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script> -->
 
     <script src="index.js"></script>
   </body>

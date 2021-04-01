@@ -167,8 +167,8 @@ article {
 }
 
 .p-8 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .article-header {
@@ -177,6 +177,149 @@ article {
 
 .article-body {
   max-width: 35rem;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/*  
+      Logo Presention Styling
+  */
+
+.logo-presenter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 4rem 2rem;
+}
+
+/*  
+      The Footer styling starts Here
+  */
+
+.footer {
+  background-color: var(--dark);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  float: right;
+  margin-top: 1rem;
+}
+
+.emailoctopus-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emailoctopus-form-row {
+  max-width: 17rem;
+}
+
+.email-input {
+  padding: 0.75rem 1rem !important;
+  font-size: 0.8rem;
+
+  background-color: #212125;
+  border: 1px solid #212125 !important;
+  color: var(--light-secondary) !important;
+  margin: 0 !important;
+
+  background-image: url('./images/email\ 1.svg');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  padding-left: 40px !important;
+}
+
+.socials {
+  margin-bottom: 0.2rem;
+  margin-left: auto;
+  max-width: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.socials a:hover {
+  opacity: 0.8;
+
+  transform: translateY(-2px);
+  transition: 0.2s ease-out 0.1s;
+}
+
+.btn-light {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 0.8rem !important;
+  text-transform: uppercase;
+  border: none !important;
+  border-radius: 0 !important;
+  color: var(--dark) !important;
+  background-color: var(--light) !important;
+  margin: 0;
+  padding: 0.8rem 1rem !important;
+}
+
+/*  
+      Navigation
+  */
+
+.navigation-button-div {
+  max-width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin: 2rem auto;
+}
+
+.btn-cta {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: var(--dark) 1px solid;
+  border-radius: 0;
+  color: var(--dark);
+  margin: 0;
+  padding: 0.8rem 1rem;
+}
+
+.btn-cta:hover {
+  border: var(--brand) 1px solid;
+  color: var(--brand) !important;
+  transition: 0.5s ease-out 0.1s;
+}
+
+.btn-dark {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: var(--dark) 1px solid;
+  border-radius: 0;
+  color: var(--light-secondary);
+  background: var(--dark);
+  margin: 0;
+  padding: 0.8rem 1rem;
+}
+
+.btn-dark:hover {
+  border: var(--brand) 1px solid;
+  color: var(--light-secondary) !important;
+  background-color: var(--brand);
+  transition: 0.5s ease-out 0.1s;
 }
 
 /********************************************************************************************************
@@ -202,9 +345,17 @@ article {
   ***********************************************************************************************************/
 
 @media screen and (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
   /*  
       Text styling 
   */
+
   .body-text {
     margin: 10px 0;
   }
@@ -219,6 +370,17 @@ article {
 
   .header3 {
     margin: 10px 0;
+  }
+
+  /*  
+        Logo Presentation 
+    */
+  .logo-presenter img {
+    margin: 2rem;
+    max-width: 80%;
+  }
+  .logo-presenter :first-child {
+    max-width: 9rem;
   }
 }
 
@@ -235,10 +397,39 @@ article {
 
   .inner-article-container {
     display: block;
+    text-align: left;
   }
 
   .p-8 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  /*  
+      The Footer styling starts Here
+  */
+  footer-nav {
+    font-size: 0.6rem !important;
+  }
+
+  .emailoctopus-form {
+    display: block;
+  }
+
+  .emailoctopus-form-row {
+    max-width: 100%;
+  }
+
+  .emailoctopus-form-row-subscribe {
+    margin-top: 1rem;
+  }
+
+  .socials {
+    margin-bottom: 0.2rem;
+    margin-left: auto;
+    max-width: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
