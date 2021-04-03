@@ -526,7 +526,7 @@ body {
 
 .socials {
   margin-bottom: 0.2rem;
-  margin-left: auto;
+  margin-right: auto;
   max-width: 6rem;
   display: flex;
   justify-content: space-between;
