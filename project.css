@@ -149,7 +149,7 @@ article {
       The Header Image Styling
   */
 .header-img {
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 /*  
@@ -194,6 +194,19 @@ article {
   justify-content: space-around;
 
   padding: 4rem 2rem;
+}
+
+/*  
+      Website Display Styling
+  */
+
+.website-display {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.website-display img {
+  width: 100%;
 }
 
 /*  
@@ -336,6 +349,10 @@ article {
   .article-container {
     justify-content: space-between;
   }
+
+  .no-pad {
+    display: none;
+  }
 }
 
 /********************************************************************************************************
@@ -403,6 +420,14 @@ article {
   .p-8 {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  /*  
+      Website Display Styling
+  */
+
+  .website-display {
+    padding: 2rem 1rem;
   }
 
   /*  
