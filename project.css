@@ -36,6 +36,16 @@ body {
   margin-right: auto;
 }
 
+iframe {
+  width: 100px;
+  margin: 0 auto;
+}
+
+iframe {
+  display: block;
+  border-style: none;
+}
+
 article {
   padding: 10px;
 }
