@@ -44,7 +44,7 @@
         <a href="#carouselExampleIndicators"
           ><img
             src="./images/binaview logo.svg"
-            class="brand animate__animated animate__fadeInUp"
+            class="brand animate__animated animate__fadeInDown"
             alt="Binaview Logo"
         /></a>
 
@@ -204,13 +204,17 @@
     <!-- 
       The About Section starts Here
     -->
-    <div class="container about-section wow bounceInUp">
+    <div class="container about-section">
       <img
-        class="about-img wow animate__animated animate__fadeInUp"
+        class="about-img animate__delay-1s animate__animated animate__fadeInUp"
         src="./images/aboutImg.svg"
         alt=""
       />
-      <div class="about">
+      <div
+        class="about wow slideInLeft"
+        data-wow-duration="2s"
+        data-wow-delay="5s"
+      >
         <h1 class="header1">We Don’t Just Design, We Create Solutions.</h1>
         <p class="body-text">
           We provide strategy led design to bridge the gap between your business
@@ -446,7 +450,7 @@
           <p style="color: white" class="emailoctopus-success-message"></p>
           <p style="color: white" class="emailoctopus-error-message"></p>
           <form
-            action="https://emailoctopus.com/lists/44eee8cb-529a-11eb-a3d0-06b4694bee2a/members/embedded/1.3s/add"
+            action="https://emailoctopus.com/lists/44eee8cb-529a-11eb-a3d0-06b4694bee2a/members/embedded/1.3/add"
             method="post"
             data-message-success="Thanks for subscribing!"
             data-message-missing-email-address="Your email address is required."
@@ -456,7 +460,6 @@
             data-message-invalid-parameters-error="This form has missing or invalid fields."
             data-message-unknown-error="Sorry, an unknown error has occurred. Please try again later."
             class="emailoctopus-form"
-            data-sitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6"
           >
             <div class="emailoctopus-form-row" style="margin: 0; padding: 0">
               <input
@@ -532,8 +535,14 @@
       The Footer Section ends Here
     -->
 
+    <!-- wowjs script -->
+    <script src="./js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
     <!-- Newsletter Javascript -->
-    <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-recaptcha.js"></script>
+    <!-- <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-recaptcha.js"></script> -->
     <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-embed.js"></script>
 
     <!--Popper and Bootstrap JS -->
@@ -547,12 +556,6 @@
       integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
       crossorigin="anonymous"
     ></script>
-
-    <!-- wowjs script -->
-    <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
 
     <script src="index.js"></script>
   </body>
