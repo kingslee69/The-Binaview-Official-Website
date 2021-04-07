@@ -11,11 +11,6 @@
       href="https://emailoctopus.com/bundles/emailoctopuslist/css/1.6/form.css"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-
     <!-- The favicon -->
     <link
       rel="shortcut icon"
@@ -39,12 +34,14 @@
     <!-- 
       The NavBar Starts Here
     -->
-    <nav class="container-fluid nav-bar sticky">
+    <nav
+      class="container-fluid nav-bar sticky animate__animated animate__fadeInDown"
+    >
       <div class="container flex-me">
         <a href="#carouselExampleIndicators"
           ><img
             src="./images/binaview logo.svg"
-            class="brand animate__animated animate__heartBeat"
+            class="brand"
             alt="Binaview Logo"
         /></a>
 
@@ -79,13 +76,28 @@
         </button>
       </div>
       <div class="container mobile-nav">
-        <a href="#projects" onclick="closeMobileNav()">Projects</a>
-        <a href="#team" onclick="closeMobileNav()">Team</a>
-        <a href="#client" onclick="closeMobileNav()">Clients</a>
+        <a
+          href="#projects"
+          class="wow animate__fadeInDown"
+          onclick="closeMobileNav()"
+          >Projects</a
+        >
+        <a
+          href="#team"
+          class="wow animate__fadeInDown"
+          onclick="closeMobileNav()"
+          >Team</a
+        >
+        <a
+          href="#client"
+          class="wow animate__fadeInDown"
+          onclick="closeMobileNav()"
+          >Clients</a
+        >
         <a
           href="./contact.html"
           onclick="closeMobileNav()"
-          class="btn btn-sm btn-cta desktop-only"
+          class="btn btn-sm btn-cta desktop-only wow animate__fadeInDown"
           >Start a Project</a
         >
       </div>
@@ -549,10 +561,10 @@
     ></script>
 
     <!-- wowjs script -->
-    <!-- <script src="js/wow.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
-    </script> -->
+    </script>
 
     <script src="index.js"></script>
   </body>
