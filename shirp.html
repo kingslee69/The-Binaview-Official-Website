@@ -34,7 +34,7 @@
 
     <link rel="stylesheet" href="./project.css" />
   </head>
-  <body class="animate__animated animate__fadeInUp">
+  <body class="animate">
     <!-- Three Side Article -->
     <article class="container-fluid bg-white">
       <div class="container-md article-container p-8">
@@ -70,20 +70,22 @@
       style="padding: 0"
       src="./images/shirp/Shirp header.svg"
       alt="A mockup of Shirp"
-      class="header-img container-fluid desktop-only animate__animated animate__fadeInUp"
+      class="header-img container-fluid desktop-only"
     />
     <img
       style="padding: 0"
       src="./images/shirp/Shirp header mobile.svg"
       alt="A mockup of Shirp"
-      class="header-img container-fluid mobile-only animate__animated animate__fadeInUp"
+      class="header-img container-fluid mobile-only"
     />
 
     <!-- Two Side Article -->
     <article id="article" class="container-fluid bg-white">
       <div class="container-md article-container">
-        <p class="header2 article-header">scalable, youthful and modern.</p>
-        <p class="body-text text-color article-body">
+        <p class="header2 article-header animate-right">
+          scalable, youthful and modern.
+        </p>
+        <p class="body-text text-color article-body animate-right">
           Our approach to the new logo was to break the norm and create an
           iconic and typeface logo-combo for the brand. This approach resulted
           in a much more adaptable logo that looks it’s best regardless of where
@@ -95,11 +97,13 @@
     <!-- Logo Presentation -->
     <div class="container-md logo-presenter">
       <img
+        class="animate"
         loading="lazy"
         src="./images/shirp/Shirp vertical lockup.svg"
         alt="Shirp logo in Vertical lockup"
       />
       <img
+        class="animate"
         loading="lazy"
         src="./images/shirp/Shirp horinzontal lockup.svg"
         alt="Shirp logo in horinzontal lockup"
@@ -108,7 +112,7 @@
 
     <!-- Single Side Article -->
     <article id="article" class="container-fluid bg-white">
-      <div class="container-md article-container">
+      <div class="container-md article-container animate">
         <p style="text-align: center" class="body-text text-color article-body">
           The Logo’s Icon was created to represent Shirp!’s mascot “A Unicorn”.
           The logo does well in scale and will look great for print, online,
@@ -126,14 +130,14 @@
       style="padding: 0"
       src="./images/shirp/shirp mockup.jpg"
       alt="A design of Shirp"
-      class="header-img container-fluid desktop-only"
+      class="header-img container-fluid desktop-only animate"
     />
     <img
       loading="lazy"
       style="padding: 0"
       src="./images/shirp/shirp mockup mobile.jpg"
       alt="A design of Shirp"
-      class="header-img container-fluid mobile-only"
+      class="header-img container-fluid mobile-only animate"
     />
 
     <!-- example design Image -->
@@ -142,14 +146,14 @@
       style="padding: 0"
       src="./images/shirp/shirp packaging pattern.jpg"
       alt="Shirp Packaging pattern"
-      class="header-img container-fluid desktop-only"
+      class="header-img container-fluid desktop-only animate"
     />
     <img
       loading="lazy"
       style="padding: 0"
       src="./images/shirp/shirp packaging pattern mobile.jpg"
       alt="Shirp Packaging pattern"
-      class="header-img container-fluid mobile-only"
+      class="header-img container-fluid mobile-only animate"
     />
 
     <!-- Two Side Article -->
@@ -167,8 +171,10 @@
 
     <!--  Navigation -->
     <div class="navigation-button-div">
-      <a href="./contact.html" class="btn btn-lg btn-dark">Start a Project</a>
-      <a href="./index.html" class="btn btn-lg btn-cta">Return</a>
+      <a href="./contact.html" class="btn btn-lg btn-dark animate-right"
+        >Start a Project</a
+      >
+      <a href="./index.html" class="btn btn-lg btn-cta animate-left">Return</a>
     </div>
 
     <!-- 
@@ -243,13 +249,19 @@
     <!-- Socials -->
     <div class="container">
       <div class="socials">
-        <a target="_blank" href="https://www.instagram.com/binaviewcreative/"
+        <a
+          target="_blank"
+          href="https://www.instagram.com/binaviewcreative/"
+          class="animate"
           ><img
             src="./images/socials/instagram.svg"
             alt="Link to our instagram touchpoint"
         /></a>
 
-        <a target="_blank" href="https://web.facebook.com/binaview/"
+        <a
+          target="_blank"
+          href="https://web.facebook.com/binaview/"
+          class="animate"
           ><img
             src="./images/socials/facebook.svg"
             alt="Link to our facebook touchpoint"
@@ -258,18 +270,21 @@
         <a
           target="_blank"
           href="https://www.youtube.com/channel/UCkBqvA5Lzg30mVIcJ8p8t6g/videos"
+          class="animate"
           ><img
             src="./images/socials/youtube.svg"
             alt="Link to our youtube touchpoint"
         /></a>
 
-        <a target="_blank" href="https://twitter.com/nworiekingslee"
+        <a target="_blank" href="https://twitter.com/binaview" class="animate"
           ><img
             src="./images/socials/twitter.svg"
             alt="Link to our twitter touchpoint"
         /></a>
       </div>
     </div>
+
+    <script src="index.js"></script>
 
     <!-- Newsletter Javascript -->
     <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-embed.js"></script>

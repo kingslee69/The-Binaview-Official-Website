@@ -25,6 +25,28 @@ body {
   --brand-dark: #00b5d0;
 }
 
+/* Animation */
+.animate {
+  transform: translateY(+50px);
+  opacity: 0;
+}
+
+.animate-right {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.animate-left {
+  transform: translateX(+50px);
+  opacity: 0;
+}
+
+.up {
+  transform: translateY(0);
+  opacity: 1;
+  transition: ease-in-out 0.8s;
+}
+
 .container-md {
   max-width: 1024px;
   margin-left: auto;

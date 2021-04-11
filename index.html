@@ -207,16 +207,12 @@
     -->
     <div class="container about-section">
       <img
-        class="about-img animate__delay-1s animate__animated animate__fadeInUp"
+        class="about-img animate__animated animate__fadeInUp"
         src="./images/aboutImg.svg"
         alt=""
       />
 
-      <div
-        class="about wow slideInLeft"
-        data-wow-duration="2s"
-        data-wow-delay="50s"
-      >
+      <div class="about animate">
         <h1 class="header1">We Don’t Just Design, We Create Solutions.</h1>
         <p class="body-text">
           We provide strategy led design to bridge the gap between your business
@@ -237,8 +233,8 @@
       The Projects Section starts Here
     -->
     <p class="container header2" id="projects">OUR PROJECTS</p>
-    <div class="container bg-secondary project-grid" style="padding: 0">
-      <a href="./UTC project.html" class="container project-tile">
+    <div class="container project-grid" style="padding: 0">
+      <a href="./UTC project.html" class="container project-tile animate-right">
         <img
           loading="lazy"
           class="project-img"
@@ -247,7 +243,10 @@
         />
         <p class="project-text">Unizik Tech Community Project</p>
       </a>
-      <a href="#carouselExampleIndicators" class="container project-tile">
+      <a
+        href="#carouselExampleIndicators"
+        class="container project-tile animate-left"
+      >
         <img
           loading="lazy"
           class="project-img"
@@ -256,7 +255,7 @@
         />
         <p class="project-text">Binaview Website Project</p>
       </a>
-      <a href="./shirp.html" class="container project-tile">
+      <a href="./shirp.html" class="container project-tile animate-right">
         <img
           loading="lazy"
           class="project-img"
@@ -265,7 +264,7 @@
         />
         <p class="project-text">Shirp! Branding Project</p>
       </a>
-      <a href="./zerotohero.html" class="container project-tile">
+      <a href="./zerotohero.html" class="container project-tile animate-left">
         <img
           loading="lazy"
           class="project-img"
@@ -282,11 +281,13 @@
       The CTA Section starts Here
     -->
     <div class="container-fluid CTA">
-      <p class="header2">Ready to talk?</p>
+      <p class="header2 animate">Ready to talk?</p>
       <!-- <a href="./contact.html" class="btn btn-sm btn-cta desktop-only"
         >Start a Project</a
       > -->
-      <a href="./contact.html" class="btn btn-lg btn-dark">Start a Project</a>
+      <a href="./contact.html" class="btn btn-lg btn-dark animate"
+        >Start a Project</a
+      >
     </div>
     <!-- 
       The CTA Section ends Here
@@ -313,7 +314,7 @@
         padding-bottom: 3rem;
       "
     >
-      <div class="container-sm grid">
+      <div class="container-sm grid animate">
         <div class="cell">
           <img
             loading="lazy"
@@ -339,7 +340,7 @@
             alt="A Picture of Kingsley"
           />
           <p class="header2">Akujor Paul</p>
-          <p class="header3">The Illustrator</p>
+          <p class="header3">Illustrator</p>
         </div>
         <div class="cell">
           <img
@@ -374,13 +375,13 @@
       style="margin: 5rem auto"
     >
       <p
-        class="header2 clients-header"
+        class="header2 clients-header animate"
         style="text-align: center; margin-bottom: 5rem"
       >
         HAPPY CLIENTS
       </p>
 
-      <div class="logos">
+      <div class="logos animate">
         <img
           loading="lazy"
           src="./images/clients/Vibe Big logo 1.svg"
@@ -506,13 +507,19 @@
     <!-- Socials -->
     <div class="container">
       <div class="socials">
-        <a target="_blank" href="https://www.instagram.com/binaviewcreative/"
+        <a
+          target="_blank"
+          href="https://www.instagram.com/binaviewcreative/"
+          class="animate"
           ><img
             src="./images/socials/instagram.svg"
             alt="Link to our instagram touchpoint"
         /></a>
 
-        <a target="_blank" href="https://web.facebook.com/binaview/"
+        <a
+          target="_blank"
+          href="https://web.facebook.com/binaview/"
+          class="animate"
           ><img
             src="./images/socials/facebook.svg"
             alt="Link to our facebook touchpoint"
@@ -521,12 +528,13 @@
         <a
           target="_blank"
           href="https://www.youtube.com/channel/UCkBqvA5Lzg30mVIcJ8p8t6g/videos"
+          class="animate"
           ><img
             src="./images/socials/youtube.svg"
             alt="Link to our youtube touchpoint"
         /></a>
 
-        <a target="_blank" href="https://twitter.com/nworiekingslee"
+        <a target="_blank" href="https://twitter.com/binaview" class="animate"
           ><img
             src="./images/socials/twitter.svg"
             alt="Link to our twitter touchpoint"
@@ -536,12 +544,6 @@
     <!-- 
       The Footer Section ends Here
     -->
-
-    <!-- wowjs script -->
-    <script src="./js/wow.js"></script>
-    <script>
-      new WOW().init();
-    </script>
 
     <!-- Newsletter Javascript -->
     <!-- <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-recaptcha.js"></script> -->
