@@ -369,8 +369,9 @@ body {
   font-weight: 500;
   font-size: 28px;
   line-height: 37px;
-
-  opacity: 0;
+  opacity: 1;
+  bottom: 1rem;
+  transition: 0.5s ease 0.1s;
 }
 
 .project-tile:hover img {
@@ -379,6 +380,16 @@ body {
 }
 
 .project-tile:hover .project-text {
+  bottom: 0;
+  opacity: 0;
+}
+
+.project-more img {
+  opacity: 0.6;
+  transition: 0.5s ease-out 0.1s;
+}
+
+.project-more .project-text {
   opacity: 1;
   bottom: 1rem;
   transition: 0.5s ease 0.1s;
@@ -746,14 +757,31 @@ body {
 
   .project-text {
     left: 0;
+    bottom: 0;
     font-size: 22px;
   }
 
-  .project-tile:hover .project-text {
-    opacity: 1;
+  .project-more .project-text {
+    left: 0;
     bottom: 0;
-    transition: 0.5s ease 0.1s;
+    font-size: 22px;
   }
+
+  /* .project-text {
+  color: var(--light-secondary);
+  position: absolute;
+  bottom: -1rem;
+  left: 1rem;
+
+  margin: 1rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  opacity: 1;
+  transition: 0.5s ease 0.1s;
+} */
 
   /*  
       The Project-section styling ends Here
