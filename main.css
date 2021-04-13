@@ -374,9 +374,13 @@ body {
   transition: 0.5s ease 0.1s;
 }
 
-.project-tile:hover img {
-  opacity: 0.6;
+.project-tile img {
+  opacity: 0.7;
   transition: 0.5s ease-out 0.1s;
+}
+
+.project-tile:hover img {
+  opacity: 1;
 }
 
 .project-tile:hover .project-text {
@@ -385,13 +389,13 @@ body {
 }
 
 .project-more img {
-  opacity: 0.6;
+  opacity: 0.6 !important;
   transition: 0.5s ease-out 0.1s;
 }
 
 .project-more .project-text {
-  opacity: 1;
-  bottom: 1rem;
+  opacity: 1 !important;
+  bottom: 1rem !important;
   transition: 0.5s ease 0.1s;
 }
 
@@ -766,22 +770,6 @@ body {
     bottom: 0;
     font-size: 22px;
   }
-
-  /* .project-text {
-  color: var(--light-secondary);
-  position: absolute;
-  bottom: -1rem;
-  left: 1rem;
-
-  margin: 1rem;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 37px;
-  opacity: 1;
-  transition: 0.5s ease 0.1s;
-} */
 
   /*  
       The Project-section styling ends Here
