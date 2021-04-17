@@ -72,3 +72,24 @@ window.addEventListener('load', event => {
     intersectionObserver.observe(obj);
   });
 });
+
+window.addEventListener('load', event => {
+  let intersectionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setTimeout(function () {
+          entry.target.classList.add('up');
+        }, timer);
+        timer += 50;
+        intersectionObserver.unobserve(entry.target);
+        setTimeout(function () {
+          timer = 0;
+        }, 1000);
+      }
+    });
+  });
+
+  document.querySelectorAll('.animate-down').forEach(obj => {
+    intersectionObserver.observe(obj);
+  });
+});
